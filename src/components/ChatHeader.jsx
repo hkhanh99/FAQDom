@@ -12,7 +12,7 @@ export default function ChatHeader() {
         borderTopRightRadius: '6px',
       }}
     >
-      <h2 style={{ margin: 0 }}>UniFAQ Chat</h2>
+      <h2 style={{ margin: 0 }}>UniFAQ Assistant</h2>
     </header>
   );
 }

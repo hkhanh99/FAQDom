@@ -1,0 +1,28 @@
+[
+  {
+    "topic": "General",
+    "question": "What is UniFAQ?",
+    "answer": "UniFAQ is a platform for university FAQs where students can find quick answers to common questions."
+  },
+  {
+    "topic": "Submission",
+    "question": "How to submit a question?",
+    "answer": "You can submit a new question using the submission form on the main page or contact the support team."
+  },
+  {
+    "topic": "Account",
+    "question": "Do I need to log in to use UniFAQ?",
+    "answer": "No, you can browse FAQs without logging in. Login is only needed for posting or editing questions."
+  },
+  {
+    "topic": "Support",
+    "question": "Who manages UniFAQ content?",
+    "answer": "University staff and verified contributors manage and update UniFAQ content regularly."
+  },
+  {
+    "topic": "Technical",
+    "question": "Is UniFAQ available on mobile?",
+    "answer": "Yes, UniFAQ is optimized for both desktop and mobile browsers."
+  }
+]
+

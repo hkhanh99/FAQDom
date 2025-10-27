@@ -1,49 +1,40 @@
 import React, { useState } from 'react';
 
-export default function InputBar({ onSend }) {
+export default function InputBar({ onSearch }) {
   const [input, setInput] = useState('');
 
   const handleSend = () => {
-    if (input.trim() === '') return;
-    onSend(input);
-    setInput('');
+    onSearch(input);
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        padding: '10px',
-        borderTop: '1px solid #ddd',
-        backgroundColor: '#fff'
-      }}
-    >
+    <div style={{ display: 'flex', padding: '10px', borderTop: '1px solid #ddd' }}>
       <input
         type="text"
+        placeholder="Type keyword (e.g. react, state, props)"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Type a message..."
+        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
         style={{
           flex: 1,
           padding: '8px',
           borderRadius: '4px',
-          border: '1px solid #ccc'
+          border: '1px solid #ccc',
         }}
-        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
       />
       <button
         onClick={handleSend}
         style={{
           marginLeft: '8px',
-          backgroundColor: '#6C63FF',
-          color: 'white',
-          border: 'none',
           padding: '8px 12px',
           borderRadius: '4px',
-          cursor: 'pointer'
+          border: 'none',
+          backgroundColor: '#6C63FF',
+          color: 'white',
+          cursor: 'pointer',
         }}
       >
-        Send
+        Search
       </button>
     </div>
   );
